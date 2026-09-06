@@ -2,5 +2,11 @@
 #dynamic - ever changing 
 #static - fixed
 
-name = input("What is you name? -->")
-print("Hello", name)
+x = 13
+
+h1 = eval(input("Enter a number -->"))
+
+total = h1 + x
+
+
+print("The Current total is-->",total)
