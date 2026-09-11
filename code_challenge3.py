@@ -3,9 +3,9 @@
 name = input("Sender name: ")
 weight = float(input("Enter weight (kg): "))
 distance = float(input("Enter distance (km): "))
-is_express = input("Is it express? (y/n): ").lower() == "y"
-is_international = input("Is it international? (y/n): ").lower() == "y"
-is_rush = input("Is the item rush? (y/n): ").lower() == "y"
+is_express = bool(input("Is it express? (t/f): ")) == "t"
+is_international = bool(input("Is it international? (t/f): ")) == "t"
+is_rush = input("Is the item rush? (t/f): ") == "t"
 
 # Calculate
 base_cost = (weight * 2.50) + (distance * 0.15)
@@ -35,4 +35,3 @@ else:
 print("==================================")
 
 print(f"Total shipping charge: ${total:.2f}")
-
