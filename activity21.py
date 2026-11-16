@@ -1,8 +1,8 @@
 #Jeepney Simulator
 route = ["Terminal", "Perez Park", "Pacific Mall"]
-passenger =["ana", "ben", "carla"]
+passenger =[]
 passenger.append("Dan")
-passenger.insert(0, "Lola")
+passenger.insert(0,"Lola Nena")
 x = passenger.pop()
 y = passenger.pop(0)
 Seats = 6
@@ -34,7 +34,7 @@ while True:
             name = input("Name: ")
             passenger.insert(0, name)
             total = total + Fare
-            print(name, "took the proirity seat.")
+            print(name, "took the priority seat.")
 
     elif choice == "3":
         name = input("who is getting off? ") 
@@ -44,11 +44,11 @@ while True:
         else:
             print(name, "is not on this jeep")
 
-    if choice == "4": 
+    elif choice == "4": 
         if len(passenger) == 0:
             print("The jeep is empty.")
         else:
-            left = passenger.pop(0)
+            left = passenger.pop()
             print(left, "got off at the door.")
 
     elif choice == "5": 
